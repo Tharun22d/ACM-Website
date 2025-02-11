@@ -1,0 +1,333 @@
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      font-family: Inter, sans-serif;
+    }
+     
+/* Navbar container */
+    .navbar {
+      display: flex;
+      align-items: center;  
+      justify-content: space-between; 
+      padding: 10px 20px; 
+      position: fixed;
+      top:0;
+      width: 100%;
+      border: 1px solid rgba(255, 255, 255, 0.10);
+      background: rgba(255, 255, 255, 0.70);
+      backdrop-filter: blur(18.600000381469727px); 
+      z-index: 999;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;  
+    }
+
+    .logo img {
+     
+      width: 187px;
+      height: 85px;
+      object-fit: cover;
+    }
+
+   
+    .nav-links {
+      list-style-type: none;
+      display: flex;
+      margin: 0;
+      margin-left: auto;  
+    }
+
+    .nav-links li {
+      margin: 0;
+      margin-right: 49px;  
+    }
+
+    .nav-links a {
+      color: black;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 8px 16px;
+      
+    }
+/* end of Navbar container */
+
+/* 1st container */
+  .hero img{
+    width: 100%;
+    height: 445px;
+    object-fit: cover;
+    object-position: 50% 49%;
+  }
+  .introbg{
+    background-color: #F6F7F9;
+    padding: 21px 18px;
+    margin-left: 100px;
+    margin-top: 64px;
+    width : 1318px;
+    height: 292px;
+  }
+  .intro{
+    display: flex;
+    gap : 20px;
+  }
+  .intro-img img{
+    width: 680px;
+    height: 250px;
+  }
+
+  .intro-txt button{
+    margin-top: 16px;
+    padding : 10px 10px;
+    background:#09AAE1;
+    color:#ffff;
+    border: 1px solid #09AAE1;
+  }
+  .intro-txt P{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.80);
+  }
+/* end of 1st container */
+
+/* 2nd container */
+  .text{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.80);
+    margin-left: 100px;
+    margin-right: 772px;
+    margin-top: 34px;
+  }
+/* end of 2nd container */
+
+  
+/* Profile Card Container */
+.firstrow{
+  display: flex;
+  gap:24px;
+  margin-left: 100px;
+  margin-top: 32px;
+  margin-right: 0px;
+}
+
+.container {
+  width: 197px;
+  height: 239px;
+  background-color: #d9d9d9;
+  position: relative;
+  overflow: hidden; 
+  transition: filter 0.3s ease;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(images/shri.jpg) center / cover no-repeat;
+  filter: grayscale(100%); 
+  transition: filter 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.container-vid::before {
+  background-image: url('images/vid.jpg'); /* Specific image for this container */
+}
+.container-thar::before{
+  background-image: url('images/Tharun.webp'); 
+  background-position: right 30% bottom 100%;
+}
+.container-nik::before{
+  background-image: url('images/nik.jpg'); 
+  background-position: right 30% bottom 60%;
+}
+.container-mid::before{
+  background-image: url('images/mid.jpg'); 
+  background-position: right 30% bottom 95%;
+}
+.container-sri::before{
+  background-image: url('images/sri.jpg'); 
+  background-position: right 30% bottom 50%;
+}
+.container-kar::before{
+  background-image: url('images/kar.jpg'); 
+  background-position: right 30% bottom 60%;
+}
+.container-k::before{
+  background-image: url('images/k.jpg'); 
+  background-position: right 30% bottom 80%;
+}
+.container-vidur::before{
+  background-image: url("images/vidur.jpg");
+}
+.container-jack::before{
+  background-image: url("images/jack.jpg");
+}
+.container-shob::before{
+  background-image: url("images/shob.jpg");
+}
+.container-muki::before{
+  background-image: url("images/muki.png");
+}
+.container::after {
+  content: ''; /* Empty content for the overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(203deg, rgba(0, 0, 0, 0.00) 26.74%, rgba(0, 0, 0, 0.50) 67.41%, rgba(0, 0, 0, 0.50) 94.7%);
+  transition: background 0.3s ease;
+}
+
+.container:hover::before {
+  transform: scale(1.1); 
+  filter: grayscale(0%); 
+}
+
+.container:hover::after {
+  background: linear-gradient(203deg, rgba(0, 0, 0, 0.00) 26.74%, rgba(0, 0, 0, 0.50) 67.41%, rgba(0, 0, 0, 0.50) 94.7%); /* Slightly lighter gradient on hover */
+}
+
+.shri-img {
+  width: 100%;
+  height: 100%;
+}
+
+.info {
+  position: absolute; 
+  top: 190px; 
+  left: 21px; 
+  z-index: 1; 
+}
+
+.name {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.role {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.80);
+}
+
+ /*profile card container/
+
+ /* faculty advisor */
+ .sectionadv{
+  margin-top: 64px;
+  margin-left:100px;
+  display: flex;
+  gap: 30px;
+ }
+ .adv img{
+  width: 680px;
+  height: 250px;
+  margin-right: 110px;
+  flex-shrink: 0;
+ }
+ /* end of faculty advisor */
+
+ /* faculty sponser */
+
+ .sectionfac {
+  margin-top: 64px;
+  margin-left: 100px;
+  margin-right: 110px;
+  display: flex;
+  gap: 30px;
+}
+
+.fac img {
+  width: 600px;
+  height: 250px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+/* end of faculty sponser */
+
+/*Our events*/
+
+.events{
+  display: flex;
+  width: 1318px;
+  padding: 16px 18px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 8px;
+  background: #F6F7F9;
+  margin-left: 100px;
+  margin-top: 40px;
+}
+.title h6{
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.title p{
+  color: rgba(0, 0, 0, 0.80);
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 16px;
+  }
+
+.eventcard{
+  display: flex;
+  gap: 13px;
+  width: 512px;
+  height: 197px;
+  flex-shrink: 0;
+  border: 1px solid rgba(56, 56, 56, 0.14);
+  background: #FFF;
+  padding : 8px 10px 12px 8px;
+  margin-top: 24px;
+
+}
+.eveimg img{
+  width: 225px;
+  height: 177px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.footer{
+  height: 720px;
+  flex-shrink: 0;
+  background: linear-gradient(0deg, rgba(18, 20, 22, 0.16) 0%, rgba(18, 20, 22, 0.16) 100%), url(images/footer.png) lightgray 50% / cover no-repeat;
+  width: 100%;
+  padding-top: 598px;
+  margin-top: 40px;
+}
+.ftext{
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 30px;
+}
+
+.ftext h6{ 
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.ftext a{
+  color : white;
+  text-decoration: none;
+  font-size: 14px;
+}
